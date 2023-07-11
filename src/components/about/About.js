@@ -3,9 +3,10 @@ import me from "../../assets/images/me.png";
 
 export const About = () => {
   const introParagraph =
-    "I am currently a student at University of Waterloo studying Computer Science (Coop). " +
-    "Over the years I have developed skills in mostly fullstack development and am gaining a lot interest in game development. " +
-    "If you see anything that impresses you or you'd like to work together let me know! ";
+    "I am a recent graduate from the University of Waterloo looking for a fulltime opportunity. " +
+    "Over the years I have developed skills in Fullstack development and in the Cybersecurity field. " +
+    "I am currently working towards my first Cybersecurity certificate, CompTia Security+. " +
+    "If you see anything that interests you, feel free to contact me!";
 
   const [leftIntroContainer, setLeftIntroContainer] = useState(
     "left-introduction-container-off"
@@ -61,9 +62,9 @@ export const About = () => {
               <h4>Phone: (905)-512-7876</h4>
               <h4>Email: &nbsp;
                 <a 
-                  href="mailto:ss2liang@uwaterloo.ca"
+                  href="mailto:skylarsamsonliang@gmail.com"
                   style={{color:"var(--baby-powder)"}}>
-                   ss2liang@uwaterloo.ca
+                   skylarsamsonliang@gmail.com
                 </a>
               </h4>
             </div>

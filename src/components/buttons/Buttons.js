@@ -25,7 +25,7 @@ export const Button = (props) => {
     case "Github":
       return (
         <div className={props.class}>
-          <a href={props.gitLink} target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/SkylarSL" target="_blank" rel="noopener noreferrer">
             <button className="circle-button">
               <GitHubIcon />
             </button>

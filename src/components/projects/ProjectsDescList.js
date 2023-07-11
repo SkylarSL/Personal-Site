@@ -136,37 +136,20 @@ const projectList = [
   },
   {
     id: 7,
-    type: "web",
-    title: "Cypher (in progress)",
+    type: "",
+    title: "Security Assignments",
     example: "",
     exampleType: "",
     desc:
-      "An upcoming project I am currently planning." +
-      "To put it simply, I wanted to make a quick webapp for encoding and decoding algorithms I recently learned in CS240 (University of Waterloo Computer Science course).",
-    git: 0,
-    gitLink: "",
-    webLink: "",
-    downloadLink: "",
-    tech: "React, Express",
-  },
-  {
-    id: 8,
-    type: "",
-    title: "Numerous Tutorials",
-    example: "Image/video",
-    exampleType: "",
-    desc:
-      "Other than learning a lot from my previous coops I have also learned a lot from online tutorials. " +
-      "I have completed many tutorials in my spare time to learn more about technologies that have piqued my interest. " +
-      "This mostly includes game and web development. " +
-      "I found that it is difficult to keep up with all of web development, so every so often I will do research to find the 'next best thing' and possibly learn it. " +
-      "I have carved out more time to technologies I was most interested in." +
-      "Some things that I plan to learn in the future are: Docker, cloud computing concepts, DevOps, and Blender",
+      "These are a package of cyber security related assignments I have completed during my studies. " +
+      "They cover a broad range of concepts such as memory faults, system security, cryptography, network security, etc. " +
+      "All of the assignment were fun to complete!" +
+      "They can all be seen in my git repos under \"Security\", \"Networks\", and \"Cryptography\"",
     git: 1,
-    gitLink: "",
-    webLink: "",
+    gitLink: "https://github.com/SkylarSL/img-repo",
+    webLink: "https://image-repository-3e3f2.web.app/",
     downloadLink: "",
-    tech: "React, Node.js/Express.js, MongoDB, Redux, Unity Game Dev, Angular",
+    tech: "Javascript, SQL, C, C++, Python",
   },
 ];
 
