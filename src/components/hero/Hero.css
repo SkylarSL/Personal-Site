@@ -1,0 +1,134 @@
+.hero-outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.hero-container-on {
+  background-color: var(--baby-powder);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 1000;
+  transition: 1s;
+  pointer-events: none;
+}
+
+.hero-container-off {
+  background-color: var(--baby-powder);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 1000;
+  transition: 1s 1s;
+  pointer-events: none;
+}
+
+.hero-container-off svg {
+  opacity: 0;
+  transition: 1s;
+}
+
+@keyframes outline {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.path {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 1;
+}
+
+@keyframes move-s-one {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(-288px);
+  }
+}
+@keyframes move-s-two {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(-108px);
+  }
+}
+@keyframes move-l {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(140px);
+  }
+}
+.initials-s-one {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: move-s-one 1.5s 1s linear alternate both;
+  animation-timing-function: ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 1;
+}
+.first-name {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 0;
+}
+.initials-s-two {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: move-s-two 1.5s 1s linear alternate both;
+  animation-timing-function: ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 1;
+}
+.middle-name {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 0;
+}
+.initials-l {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: move-l 1.5s 1s linear alternate both;
+  animation-timing-function: ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 1;
+}
+.last-name {
+  text-align: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  font-family: "Open Sans", sans-serif;
+  fill-opacity: 0;
+}
+
+.outline-on {
+  animation: outline 7s 2.5s linear alternate both;
+}

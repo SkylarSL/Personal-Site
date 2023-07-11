@@ -1,0 +1,50 @@
+.landing-button-off {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.landing-button-on {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.circle-button {
+  min-height: 50px;
+  min-width: 50px;
+  border: 1px solid var(--raisin-black);
+  outline: none;
+  border-radius: 25px;
+  position: relative;
+  background-image: linear-gradient(
+    to top right,
+    var(--key-lime),
+    var(--bottle-green)
+  );
+  z-index: 1;
+  cursor: pointer;
+}
+
+.circle-button::before {
+  min-height: 50px;
+  min-width: 50px;
+  border: 1px solid var(--raisin-black);
+  outline: none;
+  border-radius: 30px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+    to top right,
+    var(--russian-green),
+    var(--key-lime)
+  );
+
+  z-index: -1;
+  transition: opacity 0.25s linear;
+  opacity: 0;
+}
+
+.circle-button:hover::before {
+  opacity: 1;
+}

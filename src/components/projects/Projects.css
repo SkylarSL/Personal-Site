@@ -1,0 +1,147 @@
+.projects-container {
+  background-color: var(--baby-powder);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-list-container {
+  height: 100vh;
+  width: 35vw;
+}
+.projects-list {
+  height: 100vh;
+  width: 35vw;
+  overflow-y: scroll;
+  color: var(--raisin-black);
+}
+
+.project-item-container {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-item-title {
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.project-tab {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  left: -15%;
+  background-color: var(--raisin-black);
+  transition-duration: 0.5s;
+  color: var(--baby-powder);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 3.75px rgba(0, 0, 0, 1);
+}
+
+.project-item-container:hover > .project-colourful-background {
+  left: 0;
+}
+.project-item-container:hover
+  > .project-colourful-background
+  > .MuiSvgIcon-root {
+  opacity: 1;
+}
+.project-perm-colourful-background {
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  box-shadow: 0px 0px 5px 3.75px rgba(0, 0, 0, 1);
+}
+.project-tab > .MuiSvgIcon-root {
+  opacity: 0;
+}
+.project-perm-colourful-background + .project-item-title {
+  color: var(--baby-powder);
+}
+
+.project-buttons-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Single project display */
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.single-project-container-background {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--raisin-black);
+  box-shadow: inset 0px 0px 5px 3.75px rgba(0, 0, 0, 1);
+  overflow-y: scroll;
+}
+
+.single-project-container-default {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--baby-powder);
+}
+.single-project-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--baby-powder);
+  min-height: 850px;
+}
+.single-project-desc {
+  padding: 0 50px 0 50px;
+}
+.single-project-tech {
+  padding: 0 50px 0 50px;
+}
+
+.single-project-anim-off {
+  opacity: 0;
+  transition: 0.5s;
+}
+.single-project-anim-on {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.no-single-project {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-project-button-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
